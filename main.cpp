@@ -2,8 +2,8 @@
 #include <string>
 #include <functional>
 
-void vector_unique_ptr_test();
+void using_base_constructor_test();
 int main() {
-  vector_unique_ptr_test();
+  using_base_constructor_test();
   return 0;
 }
