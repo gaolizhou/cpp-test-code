@@ -2,8 +2,8 @@
 #include <string>
 #include <functional>
 
-void using_base_constructor_test();
+void move_string_test();
 int main() {
-  using_base_constructor_test();
+  move_string_test();
   return 0;
 }
