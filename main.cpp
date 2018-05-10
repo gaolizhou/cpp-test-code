@@ -1,9 +1,6 @@
-#include <iostream>
-#include <string>
-#include <functional>
 
-void move_string_test();
+void zombie_process();
 int main() {
-  move_string_test();
+  zombie_process();
   return 0;
 }
