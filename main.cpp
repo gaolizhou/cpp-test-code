@@ -1,6 +1,6 @@
 
-void zombie_process();
+void thread_local_variable();
 int main() {
-  zombie_process();
+  thread_local_variable();
   return 0;
 }
