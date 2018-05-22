@@ -1,6 +1,6 @@
 
-void thread_local_variable();
+void bind_inside();
 int main() {
-  thread_local_variable();
+  bind_inside();
   return 0;
 }

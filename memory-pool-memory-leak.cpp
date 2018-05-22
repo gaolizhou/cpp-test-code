@@ -8,7 +8,7 @@
 #include <cstdint>
 #include <thread>
 #include <glog/logging.h>
-
+#if 0
 #include <boost/pool/pool_alloc.hpp>
 namespace {
 template <typename T>
@@ -56,3 +56,4 @@ void mem_pool_memory_leak_test() {
   LOG(INFO) << "cnt = ";
   std::cin.get();
 }
+#endif
