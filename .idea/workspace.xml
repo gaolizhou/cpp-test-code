@@ -13,15 +13,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0728362e-3da0-4640-a21c-caf500dcd3cc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/bm_main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bm_string_copy.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enable_from_this-test.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/epoll-test-normal-file.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leveldb-test.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lock-free-link-list.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zombie-test.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atomic-op-test.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atomic_op_test2.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multiple-thread-cpu-cache-volatile.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leveldb-test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/leveldb-test.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -42,29 +39,17 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+            <state relative-caret-position="297">
+              <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="leveldb-test.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/leveldb-test.cpp">
+      <file leaf-file-name="atomic-op-test.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/atomic-op-test.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-              <folding>
-                <element signature="e#40#59#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bm_string_copy.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bm_string_copy.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+            <state relative-caret-position="315">
+              <caret line="21" column="18" selection-end-line="54" />
               <folding>
                 <element signature="e#39#57#0" expanded="true" />
               </folding>
@@ -72,20 +57,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="benchmark.h" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/include/benchmark/benchmark.h">
+      <file leaf-file-name="atomic_op_test2.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/atomic_op_test2.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="430" column="76" selection-start-line="430" selection-start-column="13" selection-end-line="430" selection-end-column="76" />
+            <state relative-caret-position="255">
+              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+              <folding>
+                <element signature="e#39#57#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bm_main.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bm_main.cpp">
+      <file leaf-file-name="multiple-thread-cpu-cache-volatile.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/multiple-thread-cpu-cache-volatile.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="135">
+              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+              <folding>
+                <element signature="e#39#57#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,11 +114,14 @@
         <option value="$PROJECT_DIR$/forward-list-test.cpp" />
         <option value="$PROJECT_DIR$/zombie-test.cpp" />
         <option value="$PROJECT_DIR$/lock-free-link-list.cpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/leveldb-test.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/bm_main.cpp" />
         <option value="$PROJECT_DIR$/bm_string_copy.cpp" />
+        <option value="$PROJECT_DIR$/leveldb-test.cpp" />
+        <option value="$PROJECT_DIR$/atomic-op-test.cpp" />
+        <option value="$PROJECT_DIR$/atomic_op_test2.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/multiple-thread-cpu-cache-volatile.cpp" />
       </list>
     </option>
   </component>
@@ -137,9 +131,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="28" />
-    <option name="width" value="1920" />
+    <option name="width" value="1910" />
     <option name="height" value="1018" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -180,8 +174,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.bm">
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmake_test" TARGET_NAME="cmake_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cmake_test" RUN_TARGET_NAME="bm" />
+  <component name="RunManager" selected="Application.cmake_test">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmake_test" TARGET_NAME="cmake_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cmake_test" RUN_TARGET_NAME="cmake_test" />
     <configuration name="bm" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmake_test" TARGET_NAME="bm" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cmake_test" RUN_TARGET_NAME="bm" />
     <configuration name="cmake_test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmake_test" TARGET_NAME="cmake_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cmake_test" RUN_TARGET_NAME="cmake_test" />
     <list>
@@ -226,6 +220,9 @@
       <workItem from="1531054842193" duration="1023000" />
       <workItem from="1531139752383" duration="2962000" />
       <workItem from="1531230897420" duration="2486000" />
+      <workItem from="1531316419469" duration="1047000" />
+      <workItem from="1531466537743" duration="6190000" />
+      <workItem from="1532399225821" duration="349000" />
     </task>
     <task id="LOCAL-00001" summary="add test code">
       <created>1523942433496</created>
@@ -238,22 +235,22 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62166000" />
+    <option name="totallyTimeSpent" value="69752000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="28" width="1920" height="1018" extended-state="7" />
+    <frame x="0" y="28" width="1920" height="1018" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24635416" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24635416" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.43333334" />
       <window_info anchor="bottom" id="CMake" order="7" weight="0.32873562" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.45287356" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45287356" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.43908045" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.31494254" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -292,34 +289,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -553,30 +522,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/leveldb-test.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-          <folding>
-            <element signature="e#40#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bm_main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -586,15 +531,70 @@
     </entry>
     <entry file="file:///usr/local/include/benchmark/benchmark.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
+        <state relative-caret-position="6450">
           <caret line="430" column="76" selection-start-line="430" selection-start-column="13" selection-end-line="430" selection-end-column="76" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bm_string_copy.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+        <state relative-caret-position="150">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leveldb-test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/4.8.2/bits/atomic_base.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="524" column="56" selection-start-line="524" selection-start-column="46" selection-end-line="524" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atomic-op-test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="18" selection-end-line="54" />
+          <folding>
+            <element signature="e#39#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atomic_op_test2.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="e#39#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiple-thread-cpu-cache-volatile.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
           <folding>
             <element signature="e#39#57#0" expanded="true" />
           </folding>

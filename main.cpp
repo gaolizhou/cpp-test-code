@@ -10,8 +10,8 @@
 
 
  */
-void leveldb_test();
-
+void multiple_thread_cpu_cache_test();
+/*
 void logging_level_test () {
   google::InitGoogleLogging("XXX");
   google::SetCommandLineOption("GLOG_minloglevel", "2");
@@ -27,7 +27,8 @@ void logging_level_test () {
   //LOG(FATAL) << "LOG(FATAL)";
 
 }
+ */
 int main() {
-  leveldb_test();
+  multiple_thread_cpu_cache_test();
   return 0;
 }

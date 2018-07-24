@@ -28,7 +28,7 @@ void leveldb_test()
 
   // Add 256 values to the database
   leveldb::WriteOptions writeOptions;
-  for (unsigned int i = 0; i < 1000000; ++i)
+  for (unsigned int i = 0; i < 1000; ++i)
   {
     ostringstream keyStream;
     keyStream << "Key" << i;
