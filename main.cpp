@@ -10,7 +10,7 @@
 
 
  */
-void multiple_thread_cpu_cache_test();
+void bufferevent_empty_loop_test();
 /*
 void logging_level_test () {
   google::InitGoogleLogging("XXX");
@@ -29,6 +29,6 @@ void logging_level_test () {
 }
  */
 int main() {
-  multiple_thread_cpu_cache_test();
+  bufferevent_empty_loop_test();
   return 0;
 }

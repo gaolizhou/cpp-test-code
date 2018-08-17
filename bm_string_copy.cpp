@@ -3,7 +3,25 @@
 //
 #include <cstdlib>
 #include <memory.h>
+#include <functional>
 #include <benchmark/benchmark.h>
+namespace {
+class Data {
+ public:
+  int Add(int x, int y) {
+    base_++;
+    return x+y + base_;
+  }
+ private:
+  int base_ = 100;
+};
+
+int Sub(int x, int y) {
+  return x-y;
+}
+
+
+}
 
 static void BM_StringCreation(benchmark::State& state) {
   for (auto _ : state)
@@ -29,5 +47,45 @@ static void BM_MemoryCopy(benchmark::State& state) {
   }
 }
 BENCHMARK(BM_MemoryCopy);
+
+static void BM_Bind(benchmark::State& state) {
+  Data data;
+  auto f =  std::bind(&Data::Add, &data, 200, std::placeholders::_1);
+  int result=0;
+  for (auto _ : state) {
+    result += f(10);
+  }
+}
+BENCHMARK(BM_Bind);
+
+static void BM_Lambda(benchmark::State& state) {
+  Data data;
+  auto f =  [&data](int x){ return data.Add(x, 200);};
+  int result=0;
+  for (auto _ : state) {
+    result += f(10);
+  }
+}
+BENCHMARK(BM_Lambda);
+
+static void BM_Bind2(benchmark::State& state) {
+  Data data;
+  auto f =  std::bind(&Sub, 200, std::placeholders::_1);
+  for (auto _ : state) {
+    f(10);
+  }
+}
+BENCHMARK(BM_Bind2);
+
+static void BM_Lambda2(benchmark::State& state) {
+  auto f =  [](int x){ return Sub(x, 200);};
+  for (auto _ : state) {
+    f(10);
+  }
+}
+BENCHMARK(BM_Lambda2);
+
+
+
 
 
