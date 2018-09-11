@@ -13,23 +13,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0728362e-3da0-4640-a21c-caf500dcd3cc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/bind-lambda-performance-test.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bm_slab.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bm_unorder_set_map.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/get_clock.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/get_clock.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libevent-bufferevent-client.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libevent_empty_loop_test.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/bm_glog.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lru-cache.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rand-test.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slab-benchmark.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bm_string_copy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/bm_string_copy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="0728362e-3da0-4640-a21c-caf500dcd3cc" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/CMakeFiles/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
