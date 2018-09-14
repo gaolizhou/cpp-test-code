@@ -10,7 +10,7 @@
 
 
  */
-void bufferevent_empty_loop_test();
+void fork_test();
 /*
 void logging_level_test () {
   google::InitGoogleLogging("XXX");
@@ -29,6 +29,6 @@ void logging_level_test () {
 }
  */
 int main() {
-  bufferevent_empty_loop_test();
+  fork_test();
   return 0;
 }
