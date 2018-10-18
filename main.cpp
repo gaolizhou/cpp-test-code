@@ -10,7 +10,7 @@
 
 
  */
-void fork_test();
+void bind_performance_test();
 /*
 void logging_level_test () {
   google::InitGoogleLogging("XXX");
@@ -29,6 +29,6 @@ void logging_level_test () {
 }
  */
 int main() {
-  fork_test();
+  bind_performance_test();
   return 0;
 }
