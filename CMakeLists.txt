@@ -14,7 +14,7 @@ add_executable(cmake_test main.cpp Foo.cc Foo.h my_enable_if.cc temlate_spec.cc 
         bind-inside.cpp epoll-test-normal-file.cpp enable_from_this-test.cpp forward-list-test.cpp zombie-test.cpp
         lock-free-link-list.cpp leveldb-test.cpp atomic-op-test.cpp atomic_op_test2.cpp multiple-thread-cpu-cache-volatile.cpp
         slab-benchmark.cpp get_clock.c get_clock.h lru-cache.cpp rand-test.cpp bind-lambda-performance-test.cpp
-        libevent-bufferevent-client.cpp libevent_empty_loop_test.cpp thundering-herd/socket-accept-fork.cpp sfinae-test.cpp mutex_futex-test.cpp dup-fd-test.cpp libevent-sockpair.cpp clone-test.cpp static_cast-test.cpp vptr-test.cpp alloctor-test.cpp thread-local-test.cpp page-cache-test.cpp vfork-test.cpp fork-test.cpp vector-gdb-test.cpp malloc-info-test.cpp shared-ptr-size.cpp coroutine-test.cpp dead-loop.cpp template/var-args.cpp page-table.cpp performance/bind-performance.cpp)
+        libevent-bufferevent-client.cpp libevent_empty_loop_test.cpp thundering-herd/socket-accept-fork.cpp sfinae-test.cpp mutex_futex-test.cpp dup-fd-test.cpp libevent-sockpair.cpp clone-test.cpp static_cast-test.cpp vptr-test.cpp alloctor-test.cpp thread-local-test.cpp page-cache-test.cpp vfork-test.cpp fork-test.cpp vector-gdb-test.cpp malloc-info-test.cpp shared-ptr-size.cpp coroutine-test.cpp dead-loop.cpp template/var-args.cpp page-table.cpp performance/bind-performance.cpp pod_init.cpp performance/huge-lambda-callback.cpp)
 #target_link_libraries(cmake_test glog gflags unwind lzma pthread)
 target_link_libraries(cmake_test glog gflags leveldb pthread event event_core)
 

@@ -10,7 +10,7 @@
 
 
  */
-void bind_performance_test();
+void huge_lambda_cb_test();
 /*
 void logging_level_test () {
   google::InitGoogleLogging("XXX");
@@ -29,6 +29,6 @@ void logging_level_test () {
 }
  */
 int main() {
-  bind_performance_test();
+  huge_lambda_cb_test();
   return 0;
 }
