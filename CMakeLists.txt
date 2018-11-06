@@ -19,12 +19,12 @@ add_executable(cmake_test main.cpp Foo.cc Foo.h my_enable_if.cc temlate_spec.cc 
         fork-test.cpp vector-gdb-test.cpp malloc-info-test.cpp shared-ptr-size.cpp coroutine-test.cpp dead-loop.cpp template/var-args.cpp page-table.cpp
         performance/bind-performance.cpp pod_init.cpp performance/huge-lambda-callback.cpp algorithms/time-wheel.cpp io/direct-io-test.cpp io/libaio-test.cpp
         framework/loop.cpp framework/loop.h io/bash_test.cpp io/pip-test.cpp cpu-friendly-program/false-sharing.cpp stl/vector-size-test.cpp stl/map-test.cpp
-        mmhash/mmhash_test.cpp mmhash/hash_ring_test.cpp)
+        mmhash/mmhash_test.cpp mmhash/hash_ring_test.cpp udisk-opt/int2str.cpp)
 #target_link_libraries(cmake_test glog gflags unwind lzma pthread)
 add_subdirectory(mmhash)
 target_link_libraries(cmake_test glog gflags leveldb pthread event event_core hash_ring)
 
 
 add_executable(bm benchmark/bm_string_copy.cpp benchmark/bm_main.cpp benchmark/bm_slab.cpp benchmark/bm_unorder_set_map.cpp libs/bm_glog.cpp
-               benchmark/bm_function_bind.cpp mmhash/mmhash_test.cpp)
+               benchmark/bm_function_bind.cpp benchmark/bm_stringstream.cpp)
 target_link_libraries(bm glog gflags benchmark pthread)

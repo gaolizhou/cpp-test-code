@@ -12,7 +12,7 @@ void hash_ring_test() {
   udisk::hash_ring::HashRing ring;
 
   uint32_t pgnum = 15;
-  uint32_t scalenum = 2;
+  uint32_t scalenum = 1;
   uint32_t conflicta = 7;
   uint32_t conflictb = 3;
   for (uint32_t i = 0; i < pgnum; ++i) {

@@ -10,7 +10,7 @@
 
 
  */
-void hash_ring_test();
+void int2str_test();
 /*
 void logging_level_test () {
   google::InitGoogleLogging("XXX");
@@ -29,6 +29,6 @@ void logging_level_test () {
 }
  */
 int main() {
-  hash_ring_test();
+  int2str_test();
   return 0;
 }
