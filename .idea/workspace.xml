@@ -3,6 +3,7 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
       <config projectName="cmake_test" targetName="cmake_test" />
+      <config projectName="cmake_test" targetName="hash_ring" />
       <config projectName="cmake_test" targetName="bm" />
     </generated>
   </component>
@@ -14,22 +15,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0728362e-3da0-4640-a21c-caf500dcd3cc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/algorithms/time-wheel.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/benchmark/bm_unorder_set_map.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework/loop.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework/loop.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/io/bash_test.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/io/direct-io-test.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/io/libaio-test.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/io/pip-test.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cpu-friendly-program/false-sharing.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mmhash/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mmhash/hash_ring.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mmhash/hash_ring.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mmhash/hash_ring_test.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mmhash/hash_ring_types.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mmhash/mmhash_test.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mmhash/murmur_hash2.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mmhash/murmur_hash2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stl/map-test.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stl/vector-size-test.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bm_main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/benchmark/bm_main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bm_slab.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/benchmark/bm_slab.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bm_string_copy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/benchmark/bm_string_copy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bm_unorder_set_map.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/benchmark/bm_function_bind.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithms/time-wheel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/time-wheel.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/performance/huge-lambda-callback.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/performance/huge-lambda-callback.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/CMakeFiles/" />
@@ -49,8 +49,8 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+            <state relative-caret-position="-1">
+              <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -58,48 +58,74 @@
       <file leaf-file-name="time-wheel.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/algorithms/time-wheel.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="2" selection-start-column="2" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="libaio-test.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/io/libaio-test.cpp">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loop.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework/loop.cpp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="loop.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework/loop.h">
+      <file leaf-file-name="hash_ring.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mmhash/hash_ring.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+            <state relative-caret-position="149">
+              <caret line="85" column="66" lean-forward="true" selection-start-line="85" selection-start-column="66" selection-end-line="85" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pip-test.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/io/pip-test.cpp">
+      <file leaf-file-name="mmhash_test.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mmhash/mmhash_test.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
-                <element signature="e#40#59#0" expanded="true" />
+                <element signature="e#41#66#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hash_ring.cc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mmhash/hash_ring.cc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mmhash/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hash_ring_test.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mmhash/hash_ring_test.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+              <folding>
+                <element signature="e#39#61#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -120,13 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/bind-rvalue-reference.cc" />
-        <option value="$PROJECT_DIR$/using-base-constructor.cpp" />
-        <option value="$PROJECT_DIR$/enable_from_this-test.cpp" />
-        <option value="$PROJECT_DIR$/forward-list-test.cpp" />
-        <option value="$PROJECT_DIR$/zombie-test.cpp" />
-        <option value="$PROJECT_DIR$/lock-free-link-list.cpp" />
-        <option value="$PROJECT_DIR$/bm_main.cpp" />
         <option value="$PROJECT_DIR$/leveldb-test.cpp" />
         <option value="$PROJECT_DIR$/atomic_op_test2.cpp" />
         <option value="$PROJECT_DIR$/multiple-thread-cpu-cache-volatile.cpp" />
@@ -164,13 +183,20 @@
         <option value="$PROJECT_DIR$/performance/bind-performance.cpp" />
         <option value="$PROJECT_DIR$/pod_init.cpp" />
         <option value="$PROJECT_DIR$/performance/huge-lambda-callback.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/benchmark/bm_function_bind.cpp" />
         <option value="$PROJECT_DIR$/io/direct-io-test.cpp" />
         <option value="$PROJECT_DIR$/framework/loop.h" />
         <option value="$PROJECT_DIR$/io/bash_test.cpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/io/pip-test.cpp" />
+        <option value="$PROJECT_DIR$/cpu-friendly-program/false-sharing.cpp" />
+        <option value="$PROJECT_DIR$/stl/vector-size-test.cpp" />
+        <option value="$PROJECT_DIR$/stl/map-test.cpp" />
+        <option value="$PROJECT_DIR$/algorithms/time-wheel.cpp" />
+        <option value="$PROJECT_DIR$/mmhash/mmhash_test.cpp" />
+        <option value="$PROJECT_DIR$/mmhash/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/mmhash/hash_ring_test.cpp" />
       </list>
     </option>
   </component>
@@ -192,7 +218,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -203,17 +228,13 @@
             <path>
               <item name="cmake_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="cpp-test-code" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmake_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpp-test-code" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="mmhash" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -223,12 +244,13 @@
     <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/benchmark" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mmhash" />
       <recent name="$PROJECT_DIR$/benchmark" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/benchmark" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -247,10 +269,12 @@
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmake_test" TARGET_NAME="cmake_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cmake_test" RUN_TARGET_NAME="cmake_test" />
     <configuration name="bm" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmake_test" TARGET_NAME="bm" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cmake_test" RUN_TARGET_NAME="bm" />
     <configuration name="cmake_test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmake_test" TARGET_NAME="cmake_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cmake_test" RUN_TARGET_NAME="cmake_test" />
+    <configuration name="hash_ring" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cmake_test" TARGET_NAME="hash_ring" CONFIG_NAME="Debug" />
     <list>
       <item itemvalue="Application.Build All" />
       <item itemvalue="Application.bm" />
       <item itemvalue="Application.cmake_test" />
+      <item itemvalue="Application.hash_ring" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -321,6 +345,10 @@
       <workItem from="1539917074380" duration="1382000" />
       <workItem from="1539932551488" duration="7700000" />
       <workItem from="1540273516916" duration="15348000" />
+      <workItem from="1540889556761" duration="109000" />
+      <workItem from="1540889732666" duration="114000" />
+      <workItem from="1540891987616" duration="3359000" />
+      <workItem from="1541137202500" duration="5510000" />
     </task>
     <task id="LOCAL-00001" summary="add test code">
       <created>1523942433496</created>
@@ -333,7 +361,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="185650000" />
+    <option name="totallyTimeSpent" value="194742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1018" extended-state="6" />
@@ -342,13 +370,13 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.240625" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49947917" weight="0.32413793" />
-      <window_info anchor="bottom" id="CMake" order="7" weight="0.32873562" />
+      <window_info anchor="bottom" id="CMake" order="7" weight="0.32528734" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5005208" side_tool="true" weight="0.32413793" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947917" weight="0.3643678" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.12643678" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.49310344" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -387,102 +415,16 @@
           <line>33</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/stl/vector-size-test.cpp</url>
+          <line>15</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="38" />
+      <option name="time" value="43" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/libevent-sockpair.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="20" column="15" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/bits/sched.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="82" column="40" selection-start-line="82" selection-start-column="40" selection-end-line="82" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/glog/logging.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="1652" column="53" selection-start-line="1652" selection-start-column="26" selection-end-line="1652" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/include/glog/logging.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="1649" column="26" selection-start-line="1649" selection-start-column="26" selection-end-line="1649" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atomic-op-test.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="42" column="3" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vptr-test.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/c++/4.8.2/bits/allocator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
-          <caret line="91" column="44" selection-start-line="91" selection-start-column="28" selection-end-line="91" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alloctor-test.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/c++/4.8.2/ext/new_allocator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="119" column="59" selection-start-line="119" selection-start-column="29" selection-end-line="119" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vfork-test.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/c++/4.8.2/bits/stl_vector.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="81" column="18" lean-forward="true" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fork-test.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/memory-leak.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="84" column="22" lean-forward="true" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/thread-local-test.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -501,13 +443,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dup-fd-test.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -641,16 +576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="376">
           <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-          <folding>
-            <element signature="e#246#258#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="78" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
         </state>
       </provider>
     </entry>
@@ -658,10 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="721">
           <caret line="57" selection-start-line="39" selection-end-line="57" />
-          <folding>
-            <element signature="e#41#62#0" expanded="true" />
-            <element signature="e#248#260#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -669,9 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
           <caret line="12" column="36" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="36" />
-          <folding>
-            <element signature="e#40#56#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -679,26 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          <folding>
-            <element signature="e#40#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/time-wheel.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/io/direct-io-test.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding>
-            <element signature="e#41#60#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -719,16 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/io/bash_test.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="54" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="54" />
-          <folding>
-            <element signature="e#41#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/framework/loop.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -740,13 +628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="416" column="32" selection-start-line="416" selection-start-column="17" selection-end-line="416" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -764,12 +645,161 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cpu-friendly-program.cpp" />
+    <entry file="file://$PROJECT_DIR$/dup-fd-test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stl/map-test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stl/vector-size-test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/io/direct-io-test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/io/bash_test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+          <folding>
+            <element signature="e#41#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpu-friendly-program/false-sharing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding>
+            <element signature="e#41#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/io/pip-test.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        <state relative-caret-position="210">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="16" />
           <folding>
             <element signature="e#40#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mmhash/murmur_hash2.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="32" column="27" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mmhash/murmur_hash2.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-390">
+          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mmhash/hash_warpper.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding>
+            <element signature="e#123#137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mmhash/consistent_hash_map.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="e#63#77#0" expanded="true" />
+            <element signature="e#204#334#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/time-wheel.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mmhash/mmhash_test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#41#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mmhash/hash_ring.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mmhash/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mmhash/hash_ring.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="85" column="66" lean-forward="true" selection-start-line="85" selection-start-column="66" selection-end-line="85" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1">
+          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mmhash/hash_ring_test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+          <folding>
+            <element signature="e#39#61#0" expanded="true" />
           </folding>
         </state>
       </provider>

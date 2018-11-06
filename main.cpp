@@ -10,7 +10,7 @@
 
 
  */
-void pipe_test();
+void hash_ring_test();
 /*
 void logging_level_test () {
   google::InitGoogleLogging("XXX");
@@ -29,6 +29,6 @@ void logging_level_test () {
 }
  */
 int main() {
-  pipe_test();
+  hash_ring_test();
   return 0;
 }
