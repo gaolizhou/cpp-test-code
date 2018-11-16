@@ -66,7 +66,7 @@ bool operator!=(const Mallocator<T>&, const Mallocator<U>&) { return false; }
 
 
 void unordered_map_alloctor_test() {
-  std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, Mallocator< std::pair<const int, int>> > my_map;
+ // std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, Mallocator< std::pair<const int, int>> > my_map;
 
 
 }

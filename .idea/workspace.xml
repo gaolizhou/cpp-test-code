@@ -2,9 +2,9 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
+      <config projectName="cmake_test" targetName="bm" />
       <config projectName="cmake_test" targetName="cmake_test" />
       <config projectName="cmake_test" targetName="hash_ring" />
-      <config projectName="cmake_test" targetName="bm" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -15,18 +15,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0728362e-3da0-4640-a21c-caf500dcd3cc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/cstyle-init.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/io/unlink-test.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/performance/bind_malloc_free.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/performance/crtp-bind.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/performance/fix_size_function_test.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/performance/fixed_size_function.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/performance/unordered_map_alloctor.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/signal-handle/singal_thread_context.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmhash/hash_ring_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/mmhash/hash_ring_test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance/unordered_map_alloctor.cc" beforeDir="false" afterPath="$PROJECT_DIR$/performance/unordered_map_alloctor.cc" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/CMakeFiles/" />
@@ -77,7 +66,7 @@
       <file leaf-file-name="fix_size_function_test.cc" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/performance/fix_size_function_test.cc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
+            <state relative-caret-position="900">
               <caret line="60" column="19" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
             </state>
           </provider>
@@ -86,15 +75,11 @@
       <file leaf-file-name="unordered_map_alloctor.cc" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/performance/unordered_map_alloctor.cc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="59" column="27" lean-forward="true" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
+            <state relative-caret-position="196">
+              <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
               <folding>
                 <element signature="e#41#66#0" expanded="true" />
                 <element signature="e#841#850#0" expanded="true" />
-                <element signature="e#932#941#0" expanded="true" />
-                <element signature="e#1491#1506#0" expanded="true" />
-                <element signature="e#1283#1301#0" expanded="true" />
-                <element signature="e#1388#1406#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,7 +88,7 @@
       <file leaf-file-name="unordered_map.h" pinned="false" current-in-tab="false">
         <entry file="file:///usr/include/c++/4.8.2/bits/unordered_map.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
+            <state relative-caret-position="1425">
               <caret line="95" column="31" selection-start-line="95" selection-start-column="31" selection-end-line="95" selection-end-column="31" />
             </state>
           </provider>
@@ -112,7 +97,7 @@
       <file leaf-file-name="allocator.h" pinned="false" current-in-tab="false">
         <entry file="file:///usr/include/c++/4.8.2/bits/allocator.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
+            <state relative-caret-position="1530">
               <caret line="102" selection-start-line="102" selection-end-line="105" />
               <folding>
                 <element signature="e#2429#2444#0" expanded="true" />
@@ -384,6 +369,7 @@
       <workItem from="1541987501445" duration="1469000" />
       <workItem from="1542174952471" duration="9160000" />
       <workItem from="1542203756596" duration="3551000" />
+      <workItem from="1542336230307" duration="640000" />
     </task>
     <task id="LOCAL-00001" summary="add test code">
       <created>1523942433496</created>
@@ -396,7 +382,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224407000" />
+    <option name="totallyTimeSpent" value="225047000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1018" extended-state="6" />
@@ -772,7 +758,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/performance/fix_size_function_test.cc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
+        <state relative-caret-position="900">
           <caret line="60" column="19" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
         </state>
       </provider>
@@ -793,14 +779,14 @@
     </entry>
     <entry file="file:///usr/include/c++/4.8.2/bits/unordered_map.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
+        <state relative-caret-position="1425">
           <caret line="95" column="31" selection-start-line="95" selection-start-column="31" selection-end-line="95" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/include/c++/4.8.2/bits/allocator.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
+        <state relative-caret-position="1530">
           <caret line="102" selection-start-line="102" selection-end-line="105" />
           <folding>
             <element signature="e#2429#2444#0" expanded="true" />
@@ -817,15 +803,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/performance/unordered_map_alloctor.cc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="59" column="27" lean-forward="true" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
+        <state relative-caret-position="196">
+          <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
           <folding>
             <element signature="e#41#66#0" expanded="true" />
             <element signature="e#841#850#0" expanded="true" />
-            <element signature="e#932#941#0" expanded="true" />
-            <element signature="e#1491#1506#0" expanded="true" />
-            <element signature="e#1283#1301#0" expanded="true" />
-            <element signature="e#1388#1406#0" expanded="true" />
           </folding>
         </state>
       </provider>
