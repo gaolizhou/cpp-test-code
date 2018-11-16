@@ -12,7 +12,7 @@ void hash_ring_test() {
   udisk::hash_ring::HashRing ring;
 
   uint32_t pgnum = 15;
-  uint32_t scalenum = 1;
+  uint32_t scalenum = 4000;
   uint32_t conflicta = 7;
   uint32_t conflictb = 3;
   for (uint32_t i = 0; i < pgnum; ++i) {
@@ -30,4 +30,12 @@ void hash_ring_test() {
     }
   }
   LOG(INFO) << "size=" << ring.size();
+
+  uint32_t lcid = 0;
+  uint32_t pc = 10;
+  uint32_t lcrandomid = 123456;
+
+  std::stringstream ss;
+  ss << lcid << "-" << pc << "-" << lcrandomid;
+  LOG(INFO) <<  ring.hash(ss.str()).id();
 }

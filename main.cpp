@@ -10,7 +10,7 @@
 
 
  */
-void int2str_test();
+void unordered_map_alloctor_test();
 /*
 void logging_level_test () {
   google::InitGoogleLogging("XXX");
@@ -29,6 +29,6 @@ void logging_level_test () {
 }
  */
 int main() {
-  int2str_test();
+  unordered_map_alloctor_test();
   return 0;
 }
