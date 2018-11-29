@@ -20,7 +20,7 @@ add_executable(cmake_test main.cpp Foo.cc Foo.h my_enable_if.cc temlate_spec.cc 
         fork-test.cpp vector-gdb-test.cpp malloc-info-test.cpp shared-ptr-size.cpp coroutine-test.cpp dead-loop.cpp template/var-args.cpp page-table.cpp
         performance/bind-performance.cpp pod_init.cpp performance/huge-lambda-callback.cpp algorithms/time-wheel.cpp io/direct-io-test.cpp io/libaio-test.cpp
         framework/loop.cpp framework/loop.h io/bash_test.cpp io/pip-test.cpp cpu-friendly-program/false-sharing.cpp stl/vector-size-test.cpp stl/map-test.cpp
-        mmhash/mmhash_test.cpp mmhash/hash_ring_test.cpp udisk-opt/int2str.cpp io/unlink-test.cc cstyle-init.cc signal-handle/singal_thread_context.cc performance/bind_malloc_free.cc performance/crtp-bind.cc performance/fixed_size_function.h performance/fix_size_function_test.cc performance/unordered_map_alloctor.cc)
+        mmhash/mmhash_test.cpp mmhash/hash_ring_test.cpp udisk-opt/int2str.cpp io/unlink-test.cc cstyle-init.cc signal-handle/singal_thread_context.cc performance/bind_malloc_free.cc performance/crtp-bind.cc performance/fixed_size_function.h performance/fix_size_function_test.cc performance/unordered_map_alloctor.cc lambda_delay_call.cc performance/derived-inline-virtual-function.cc restful/http-server-test.cc atomic-cost.cc)
 #target_link_libraries(cmake_test glog gflags unwind lzma pthread)
 add_subdirectory(mmhash)
 target_link_libraries(cmake_test glog gflags leveldb pthread event event_core hash_ring)

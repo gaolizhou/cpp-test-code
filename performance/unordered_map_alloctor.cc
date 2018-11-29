@@ -63,10 +63,21 @@ bool operator!=(const Mallocator<T>&, const Mallocator<U>&) { return false; }
 
 
 }
-
+namespace {
+struct Data {
+  int x;
+  int y;
+  int z;
+};
+}
 
 void unordered_map_alloctor_test() {
  // std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, Mallocator< std::pair<const int, int>> > my_map;
-
+  std::unordered_map<int, Data*> data_map;
+  data_map.reserve(100);
+  Data data[10];
+  for (int i = 0; i < 10; ++i) {
+    data_map.insert({i, &data[i]});
+  }
 
 }

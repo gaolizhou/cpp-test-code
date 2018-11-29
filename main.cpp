@@ -10,7 +10,7 @@
 
 
  */
-void unordered_map_alloctor_test();
+void atomic_cost_test();
 /*
 void logging_level_test () {
   google::InitGoogleLogging("XXX");
@@ -29,6 +29,6 @@ void logging_level_test () {
 }
  */
 int main() {
-  unordered_map_alloctor_test();
+  atomic_cost_test();
   return 0;
 }
