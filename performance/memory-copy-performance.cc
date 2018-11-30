@@ -5,7 +5,7 @@
 #include <glog/logging.h>
 
 constexpr int MEMSIZE = 4096;
-constexpr int COPYCNT = 1000000;
+constexpr int COPYCNT = 100000000;
 
 void memory_copy_performance() {
   char src[MEMSIZE];
