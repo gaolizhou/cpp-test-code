@@ -10,7 +10,7 @@
 
 
  */
-void atomic_cost_test();
+void memory_copy_performance();
 /*
 void logging_level_test () {
   google::InitGoogleLogging("XXX");
@@ -29,6 +29,6 @@ void logging_level_test () {
 }
  */
 int main() {
-  atomic_cost_test();
+  memory_copy_performance();
   return 0;
 }
