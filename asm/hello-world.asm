@@ -1,6 +1,6 @@
 section .data
-    msg db  'hello, world!\n'
-    msg_len equ $-msg
+    msg: db  "hello, world!\n"
+    msg_len: equ $-msg
 
 section .text
     global _start

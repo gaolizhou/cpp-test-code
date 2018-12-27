@@ -10,7 +10,7 @@
 
 
  */
-void memory_copy_performance();
+void mmap_pagefault();
 /*
 void logging_level_test () {
   google::InitGoogleLogging("XXX");
@@ -29,6 +29,6 @@ void logging_level_test () {
 }
  */
 int main() {
-  memory_copy_performance();
+  mmap_pagefault();
   return 0;
 }
