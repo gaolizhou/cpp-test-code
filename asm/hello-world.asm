@@ -1,5 +1,6 @@
 section .data
-    msg: db  "hello, world!\n"
+    msg: db  "hello, world!"
+    next_line: db 0x0a
     msg_len: equ $-msg
 
 section .text

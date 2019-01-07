@@ -23,7 +23,7 @@ add_executable(cmake_test main.cpp Foo.cc Foo.h my_enable_if.cc temlate_spec.cc 
         mmhash/mmhash_test.cpp mmhash/hash_ring_test.cpp udisk-opt/int2str.cpp io/unlink-test.cc cstyle-init.cc signal-handle/singal_thread_context.cc
         performance/bind_malloc_free.cc performance/crtp-bind.cc performance/fixed_size_function.h performance/fix_size_function_test.cc
         performance/unordered_map_alloctor.cc lambda_delay_call.cc performance/derived-inline-virtual-function.cc restful/http-server-test.cc
-        performance/atomic-cost.cc performance/memory-copy-performance.cc io/atimic-write-multithread.cc atomic/atomic-bw.cc mmap/mmap-pagefault.cc)
+        performance/atomic-cost.cc performance/memory-copy-performance.cc io/atimic-write-multithread.cc atomic/atomic-bw.cc mmap/mmap-pagefault.cc memlayout/multithread-memlayout.cc lockfree/cas-test.cc lockfree/lockfree-linklist.cc lockfree/lockfree-stack.cc algorithms/eb.cc co-routine/setjmp-longjmp.cc)
 #target_link_libraries(cmake_test glog gflags unwind lzma pthread)
 add_subdirectory(mmhash)
 target_link_libraries(cmake_test glog gflags leveldb pthread event event_core hash_ring)

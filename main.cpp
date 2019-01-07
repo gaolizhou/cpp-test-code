@@ -10,7 +10,7 @@
 
 
  */
-void mmap_pagefault();
+void jmp_test();
 /*
 void logging_level_test () {
   google::InitGoogleLogging("XXX");
@@ -29,6 +29,6 @@ void logging_level_test () {
 }
  */
 int main() {
-  mmap_pagefault();
+  jmp_test();
   return 0;
 }
