@@ -1,10 +1,10 @@
 foo :: (Ord a) => [a] -> [a]
 foo a n xs | n==0 = []
-           | m==n-b = foo b n vs
-           | otherwise
+           | m==n-b =foo b n vs
+           | otherwise =foo a b us
            where
            b = a + 1 + n `div` 2
-           us = [ y | y  <- xs, y < b]
+           us = [ y | y <- xs, y < b]
            vs = [ y | y <- xs, y >= b]
            m = length us
 
