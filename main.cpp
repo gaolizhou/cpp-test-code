@@ -10,7 +10,7 @@
 
 
  */
-void jmp_test();
+void rehash_test();
 /*
 void logging_level_test () {
   google::InitGoogleLogging("XXX");
@@ -29,6 +29,6 @@ void logging_level_test () {
 }
  */
 int main() {
-  jmp_test();
+  rehash_test();
   return 0;
 }
