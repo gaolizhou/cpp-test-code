@@ -10,7 +10,7 @@
 
 
  */
-void rehash_test();
+void sfinae_test2();
 /*
 void logging_level_test () {
   google::InitGoogleLogging("XXX");
@@ -29,6 +29,6 @@ void logging_level_test () {
 }
  */
 int main() {
-  rehash_test();
+  sfinae_test2();
   return 0;
 }
