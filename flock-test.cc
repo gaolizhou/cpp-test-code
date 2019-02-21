@@ -18,7 +18,7 @@ int resize_and_map(int fd, void *addr, size_t len)
   }
 
   map_addr = mmap(addr, len, PROT_READ | PROT_WRITE,
-                  MAP_SHARED, fd, 0);
+                  MAP_SHARED | MAP_FIXED, fd, 0);
   if (map_addr != addr) {
     LOG(ERROR) << "mmap() failed: " << strerror(errno);
     return -1;
