@@ -18,7 +18,7 @@ int resize_and_map(int fd, void *addr, size_t len)
   }
 
   map_addr = mmap(addr, len, PROT_READ | PROT_WRITE,
-                  MAP_SHARED | MAP_FIXED, fd, 0);
+                  MAP_SHARED, fd, 0);
   if (map_addr != addr) {
     LOG(ERROR) << "mmap() failed: " << strerror(errno);
     return -1;
@@ -45,8 +45,9 @@ void flock_test() {
     close(fd);
     return;
   }
-  char data[100];
-  resize_and_map(fd, data, 100);
+  void *data;
+  posix_memalign(&data, 4096, 4096);
+  resize_and_map(fd, data, 4096);
   close(fd);
   LOG(INFO) << "Sucessfully in flock " << lock_file << ", now sleep 10 seconds";
   sleep(10);
