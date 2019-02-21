@@ -10,7 +10,7 @@
 
 
  */
-void sfinae_test2();
+void flock_test();
 /*
 void logging_level_test () {
   google::InitGoogleLogging("XXX");
@@ -29,6 +29,6 @@ void logging_level_test () {
 }
  */
 int main() {
-  sfinae_test2();
+  flock_test();
   return 0;
 }
