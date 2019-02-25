@@ -10,7 +10,7 @@
 
 
  */
-void flock_test();
+void signal_handle_no_syscall();
 /*
 void logging_level_test () {
   google::InitGoogleLogging("XXX");
@@ -29,6 +29,6 @@ void logging_level_test () {
 }
  */
 int main() {
-  flock_test();
+  signal_handle_no_syscall();
   return 0;
 }
