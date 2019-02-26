@@ -10,7 +10,7 @@
 
 
  */
-void signal_handle_no_syscall();
+void epoll_test();
 /*
 void logging_level_test () {
   google::InitGoogleLogging("XXX");
@@ -29,6 +29,6 @@ void logging_level_test () {
 }
  */
 int main() {
-  signal_handle_no_syscall();
+  epoll_test();
   return 0;
 }
