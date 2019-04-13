@@ -10,7 +10,7 @@
 
 
  */
-void epoll_test();
+//void epoll_test();
 /*
 void logging_level_test () {
   google::InitGoogleLogging("XXX");
@@ -28,7 +28,9 @@ void logging_level_test () {
 
 }
  */
+
+void combine_test();
 int main() {
-  epoll_test();
+  combine_test();
   return 0;
 }
