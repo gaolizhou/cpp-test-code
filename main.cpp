@@ -29,8 +29,8 @@ void logging_level_test () {
 }
  */
 
-void combine_test();
+void direct_io_test();
 int main() {
-  combine_test();
+  direct_io_test();
   return 0;
 }
